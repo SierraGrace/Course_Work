@@ -39,7 +39,6 @@
             this.vacanciesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vacancyDatabaseDataSet = new Course_Work.VacancyDatabaseDataSet();
             this.vacanciesTableAdapter = new Course_Work.VacancyDatabaseDataSetTableAdapters.VacanciesTableAdapter();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.refreshButton = new System.Windows.Forms.Button();
             this.delButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
@@ -48,7 +47,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacanciesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacancyDatabaseDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,16 +134,6 @@
             // 
             this.vacanciesTableAdapter.ClearBeforeFill = true;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.PowderBlue;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(-2, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(844, 221);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
             // refreshButton
             // 
             this.refreshButton.BackgroundImage = global::Course_Work.Properties.Resources.refreshpng;
@@ -195,9 +183,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.CadetBlue;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 120);
+            this.pictureBox1.Location = new System.Drawing.Point(-70, 120);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(844, 382);
+            this.pictureBox1.Size = new System.Drawing.Size(978, 445);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -205,6 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(836, 474);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.dataGridView1);
@@ -213,7 +202,6 @@
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -223,7 +211,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacanciesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacancyDatabaseDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -247,7 +234,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn компаніяDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button refreshButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
