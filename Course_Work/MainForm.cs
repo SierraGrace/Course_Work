@@ -13,7 +13,7 @@ namespace Course_Work
 {
     public partial class MainForm : Form
     {
-        static string connectionString = "Provider = Microsoft.ACE.OLEDB.12.0;Data Source = C:\\Users\\Користувач\\Documents\\Studying\\Professional Practice Software Engineering\\Course_Work\\Course_Work\\Course_Work\\VacancyDatabase.mdb";
+        static string connectionString = "Provider = Microsoft.ACE.OLEDB.12.0;Data Source = VacancyDatabase.mdb";
         OleDbConnection myConnection;
 
         public MainForm()
@@ -27,6 +27,12 @@ namespace Course_Work
         private void MainForm_Load(object sender, EventArgs e)
         { 
             this.vacanciesTableAdapter.Fill(this.vacancyDatabaseDataSet.Vacancies);
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            SearchForm searchForm = new SearchForm();
+            searchForm.Show();
         }
 
         private void refreshButton_Click(object sender, EventArgs e)

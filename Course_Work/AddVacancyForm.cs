@@ -13,7 +13,7 @@ namespace Course_Work
 {
     public partial class AddVacancyForm : Form
     {
-        static string connectionString = "Provider = Microsoft.ACE.OLEDB.12.0;Data Source = C:\\Users\\Користувач\\Documents\\Studying\\Professional Practice Software Engineering\\Course_Work\\Course_Work\\Course_Work\\VacancyDatabase.mdb";
+        static string connectionString = "Provider = Microsoft.ACE.OLEDB.12.0;Data Source = VacancyDatabase.mdb";
         OleDbConnection myConnection;
 
         public AddVacancyForm()
