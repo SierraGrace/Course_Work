@@ -34,7 +34,7 @@ namespace Course_Work
             OleDbCommand command = new OleDbCommand(query, myConnection);
             command.ExecuteNonQuery();
 
-            MessageBox.Show("Вакансію виделено з бази!");
+            MessageBox.Show("Вакансію видалено з бази!");
             this.Close();
         }
 
