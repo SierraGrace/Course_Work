@@ -55,7 +55,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label1.BackColor = System.Drawing.Color.PowderBlue;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(66, 14);
             this.label1.Name = "label1";
@@ -138,7 +138,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.pictureBox2.BackColor = System.Drawing.Color.PowderBlue;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(-2, 0);
             this.pictureBox2.Name = "pictureBox2";
@@ -193,8 +193,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Yellow;
-            this.pictureBox1.BackgroundImage = global::Course_Work.Properties.Resources.yellow_texture;
+            this.pictureBox1.BackColor = System.Drawing.Color.CadetBlue;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(-2, 120);
             this.pictureBox1.Name = "pictureBox1";
