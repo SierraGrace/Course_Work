@@ -66,6 +66,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VacancyDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacancyDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddVacancyForm.resx">
       <DependentUpon>AddVacancyForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,9 +98,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="VacancyDatabaseDataSet.xsc">
+      <DependentUpon>VacancyDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VacancyDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VacancyDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VacancyDatabaseDataSet.xss">
+      <DependentUpon>VacancyDatabaseDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VacancyDatabase.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
