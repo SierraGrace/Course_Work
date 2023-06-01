@@ -37,6 +37,7 @@ namespace Course_Work
 
             OleDbCommand command = new OleDbCommand(query, myConnection);
             command.ExecuteNonQuery();
+
             MessageBox.Show("Вакансію додано до бази!");
             this.Close();
         }

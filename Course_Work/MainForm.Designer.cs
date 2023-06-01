@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.searchButton = new System.Windows.Forms.Button();
-            this.addButton = new System.Windows.Forms.Button();
-            this.delButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.назваDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,51 +39,29 @@
             this.vacanciesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vacancyDatabaseDataSet = new Course_Work.VacancyDatabaseDataSet();
             this.vacanciesTableAdapter = new Course_Work.VacancyDatabaseDataSetTableAdapters.VacanciesTableAdapter();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.refreshButton = new System.Windows.Forms.Button();
+            this.delButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacanciesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacancyDatabaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(181, 25);
+            this.label1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(66, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(350, 69);
+            this.label1.Size = new System.Drawing.Size(360, 80);
             this.label1.TabIndex = 0;
             this.label1.Text = "Робота мрії";
-            // 
-            // searchButton
-            // 
-            this.searchButton.Location = new System.Drawing.Point(577, 36);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(59, 58);
-            this.searchButton.TabIndex = 1;
-            this.searchButton.Text = "Q";
-            this.searchButton.UseVisualStyleBackColor = true;
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
-            // 
-            // addButton
-            // 
-            this.addButton.Location = new System.Drawing.Point(707, 36);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(59, 58);
-            this.addButton.TabIndex = 2;
-            this.addButton.Text = "+";
-            this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
-            // 
-            // delButton
-            // 
-            this.delButton.Location = new System.Drawing.Point(772, 36);
-            this.delButton.Name = "delButton";
-            this.delButton.Size = new System.Drawing.Size(59, 58);
-            this.delButton.TabIndex = 3;
-            this.delButton.Text = "-";
-            this.delButton.UseVisualStyleBackColor = true;
-            this.delButton.Click += new System.EventHandler(this.delButton_Click);
             // 
             // dataGridView1
             // 
@@ -100,11 +75,11 @@
             this.зарплатаDataGridViewTextBoxColumn,
             this.компаніяDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.vacanciesBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(118, 120);
+            this.dataGridView1.Location = new System.Drawing.Point(80, 120);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(589, 342);
+            this.dataGridView1.Size = new System.Drawing.Size(676, 342);
             this.dataGridView1.TabIndex = 4;
             // 
             // кодDataGridViewTextBoxColumn
@@ -161,34 +136,96 @@
             // 
             this.vacanciesTableAdapter.ClearBeforeFill = true;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(-2, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(844, 221);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
             // refreshButton
             // 
-            this.refreshButton.Location = new System.Drawing.Point(642, 36);
+            this.refreshButton.BackgroundImage = global::Course_Work.Properties.Resources.refreshpng;
+            this.refreshButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.refreshButton.Location = new System.Drawing.Point(567, 25);
             this.refreshButton.Name = "refreshButton";
             this.refreshButton.Size = new System.Drawing.Size(59, 58);
             this.refreshButton.TabIndex = 5;
-            this.refreshButton.Text = "О";
             this.refreshButton.UseVisualStyleBackColor = true;
             this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
+            // 
+            // delButton
+            // 
+            this.delButton.BackColor = System.Drawing.SystemColors.Control;
+            this.delButton.BackgroundImage = global::Course_Work.Properties.Resources.trashcan;
+            this.delButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.delButton.Location = new System.Drawing.Point(697, 25);
+            this.delButton.Name = "delButton";
+            this.delButton.Size = new System.Drawing.Size(59, 58);
+            this.delButton.TabIndex = 3;
+            this.delButton.UseVisualStyleBackColor = false;
+            this.delButton.Click += new System.EventHandler(this.delButton_Click);
+            // 
+            // addButton
+            // 
+            this.addButton.BackgroundImage = global::Course_Work.Properties.Resources.icon_add;
+            this.addButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.addButton.Location = new System.Drawing.Point(632, 25);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(59, 58);
+            this.addButton.TabIndex = 2;
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // searchButton
+            // 
+            this.searchButton.BackgroundImage = global::Course_Work.Properties.Resources.search_icon;
+            this.searchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.searchButton.Location = new System.Drawing.Point(502, 25);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(59, 58);
+            this.searchButton.TabIndex = 1;
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Yellow;
+            this.pictureBox1.BackgroundImage = global::Course_Work.Properties.Resources.yellow_texture;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 120);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(844, 382);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(843, 474);
+            this.ClientSize = new System.Drawing.Size(836, 474);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.delButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Робота мрії";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacanciesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacancyDatabaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,6 +247,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn зарплатаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn компаніяDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button refreshButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.OleDb;
 using System.Xml.Linq;
+using System.Data.OleDb;
 
 namespace Course_Work
 {
@@ -33,6 +33,7 @@ namespace Course_Work
 
             OleDbCommand command = new OleDbCommand(query, myConnection);
             command.ExecuteNonQuery();
+
             MessageBox.Show("Вакансію виделено з бази!");
             this.Close();
         }
