@@ -7,18 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Course_Work
 {
     public partial class MainForm : Form
     {
+        static string connectionString = "Provider = Microsoft.ACE.OLEDB.12.0;Data Source = C:\\Users\\Користувач\\Documents\\Studying\\Professional Practice Software Engineering\\Course_Work\\Course_Work\\Course_Work\\VacancyDatabase.mdb";
+        OleDbConnection myConnection;
+
         public MainForm()
         {
             InitializeComponent();
+
+            myConnection = new OleDbConnection(connectionString);
+            myConnection.Open();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         { 
+            this.vacanciesTableAdapter.Fill(this.vacancyDatabaseDataSet.Vacancies);
+        }
+
+        private void refreshButton_Click(object sender, EventArgs e)
+        {
+            this.vacanciesTableAdapter.Connection = myConnection;
             this.vacanciesTableAdapter.Fill(this.vacancyDatabaseDataSet.Vacancies);
         }
 
@@ -28,15 +41,15 @@ namespace Course_Work
             addForm.Show();
         }
 
-        private void refreshButton_Click(object sender, EventArgs e)
-        {
-            this.vacanciesTableAdapter.Fill(this.vacancyDatabaseDataSet.Vacancies);
-        }
-
         private void delButton_Click(object sender, EventArgs e)
         {
             DeleteVacancyForm delForm = new DeleteVacancyForm();
             delForm.Show();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            myConnection.Close();
         }
     }
 }

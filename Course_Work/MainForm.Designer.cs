@@ -183,6 +183,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MainForm";
             this.Text = "Робота мрії";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacanciesBindingSource)).EndInit();
