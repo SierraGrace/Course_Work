@@ -24,6 +24,19 @@ namespace Course_Work
             myConnection.Open();
         }
 
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            string search = searchBox.Text;
+
+            string query = "SELECT Код, Назва, Опис, Зарплата, Компанія FROM Vacancies WHERE Назва = '" + search + "'";
+
+            OleDbDataAdapter command = new OleDbDataAdapter(query, myConnection);
+            DataTable dt = new DataTable();
+
+            command.Fill(dt);
+            dataGridView1.DataSource = dt;
+        }
+
         private void SearchForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             myConnection.Close();

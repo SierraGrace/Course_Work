@@ -43,11 +43,12 @@
             this.searchButton.TabIndex = 0;
             this.searchButton.Text = "Шукати";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(77, 170);
+            this.dataGridView1.Location = new System.Drawing.Point(41, 144);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -80,7 +81,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.searchButton);
             this.Name = "SearchForm";
-            this.Text = "SearchForm";
+            this.Text = "Шукати вакансію";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SearchForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
