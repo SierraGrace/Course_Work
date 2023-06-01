@@ -18,10 +18,8 @@ namespace Course_Work
         }
 
         private void MainForm_Load(object sender, EventArgs e)
-        {
-            
+        { 
             this.vacanciesTableAdapter.Fill(this.vacancyDatabaseDataSet.Vacancies);
-
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -33,6 +31,12 @@ namespace Course_Work
         private void refreshButton_Click(object sender, EventArgs e)
         {
             this.vacanciesTableAdapter.Fill(this.vacancyDatabaseDataSet.Vacancies);
+        }
+
+        private void delButton_Click(object sender, EventArgs e)
+        {
+            DeleteVacancyForm delForm = new DeleteVacancyForm();
+            delForm.Show();
         }
     }
 }
