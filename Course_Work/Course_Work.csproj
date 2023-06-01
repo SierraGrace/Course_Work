@@ -130,8 +130,6 @@
     <None Include="Resources\search_icon.png" />
     <None Include="Resources\refreshpng.png" />
     <None Include="Resources\icon_add.png" />
-    <None Include="Resources\yellow_texture.jpg" />
-    <None Include="Resources\blue_texture.jpg" />
     <Content Include="VacancyDatabase.mdb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

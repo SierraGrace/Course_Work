@@ -63,16 +63,6 @@ namespace Course_Work.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap blue_texture {
-            get {
-                object obj = ResourceManager.GetObject("blue_texture", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icon_add {
             get {
                 object obj = ResourceManager.GetObject("icon_add", resourceCulture);
@@ -106,16 +96,6 @@ namespace Course_Work.Properties {
         internal static System.Drawing.Bitmap trashcan {
             get {
                 object obj = ResourceManager.GetObject("trashcan", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap yellow_texture {
-            get {
-                object obj = ResourceManager.GetObject("yellow_texture", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
